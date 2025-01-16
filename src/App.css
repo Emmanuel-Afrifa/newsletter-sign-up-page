@@ -1,38 +1,289 @@
-.App {
-  text-align: center;
+.sign-up-page {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .main-contents {
+
+} */
+
+p {
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.illustration-image {
+    width: 100%;
+    margin-bottom: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-container, .products-container, .sign-up-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.header-title {
+    color: hsl(235, 18%, 26%);
+    margin: 0px 0px 20px 0px;
+    font-size: 35px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-description {
+    color: hsl(235, 18%, 26%);
+    margin: 0px 0px 30px 0px;
+}
+
+.products-container {
+    margin: 0px 0px 20px 0px;
+    box-sizing: border-box;
+}
+
+.list-container {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.icon-list {
+    margin-right: 15px;
+}
+
+.sign-up-headers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.email-label {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+}
+
+.error-message {
+    color: hsl(4, 100%, 67%);
+    font-weight: 700;
+}
+
+input {
+    height: 50px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-width: 0.5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+input:focus {
+    border: 0.5px solid hsl(235, 18%, 26%);
+    color: hsl(235, 18%, 26%);
+    outline: none;
+}
+
+.regular {
+    border: 0.5px solid hsl(231, 7%, 60%);
+    color: hsl(231, 7%, 60%);
+    outline-color: hsl(231, 7%, 60%);
+}
+
+.error {
+    border: 0.5px solid hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%);
+    outline-color: hsl(4, 100%, 67%);
+    background-color: hsla(4, 100%, 67%, 0.215);
+}
+
+.sign-up-button, .dismiss-button {
+    border: none;
+    height: 55px;
+    text-align: center;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sign-up-button:hover {
+    background: linear-gradient(90deg, hsl(4, 100%, 67%), hsl(4, 97%, 61%));
+}
+
+.success-container {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.icon-success {
+    margin-top: 20vh;
+    width: 60px;
+}
+
+.success-heading {
+    margin-bottom: 5px;
+    font-size: 44px;
+    line-height: 45px;
+    color: hsl(234, 29%, 20%);
+}
+
+/* .success-description {
+    margin-bottom: 50%;
+} */
+
+.dismiss-button {
+    
+    width: 80%;
+    position: absolute;
+    bottom: 30px;
+    
+}
+
+@media screen and (min-width: 601px) {
+    .App {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: hsl(234, 29%, 20%);
+        padding: 0px 20px;
+    }
+
+    .sign-up-page {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 15px;
+        justify-content: space-between;
+        height: 600px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    .main-contents {
+        width: 51%;
+    }
+    
+    .illustration-image {
+        width: 49%;
+        margin-bottom: 0px;
+    }
+    
+    .header-container, .products-container, .sign-up-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10%;
+    }
+    
+    .header-title {
+        color: hsl(235, 18%, 26%);
+        margin: 65px 0px 10px 0px;
+        font-size: 35px;
+    }
+
+    .header-description {
+        color: hsl(235, 18%, 26%);
+        margin: 0px 0px 20px 0px;
+    }
+    
+    .products-container {
+        margin: 0px 0px 10px 0px;
+        box-sizing: border-box;
+    }
+    
+    .list-container {
+        display: flex;
+        width: 100%;
+        /* justify-content: space-between; */
+        align-items: center;
+        height: 50px;
+        box-sizing: border-box;
+        margin-bottom: 0px;
+    }
+    
+    .sign-up-button, .dismiss-button {
+        border: none;
+        height: 55px;
+        text-align: center;
+        background-color: hsl(234, 29%, 20%);
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 25px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .success-container {
+        width: 500px;
+        height: 500px;
+        padding: 0px 70px;
+        background-color: white;
+        border-radius: 15px;
+    }
+    
+    .icon-success {
+        margin-top: 50px;
+        width: 60px;
+    }
+    
+    .success-heading {
+        margin-bottom: 20px;
+        font-size: 56px;
+    }
+    
+    .dismiss-button {
+        
+        width: 360px;
+        position: absolute;
+        bottom: 30px;
+        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .App {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: hsl(234, 29%, 20%);
+        padding: 0px 20px;
+    }
+
+    .sign-up-page {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 15px;
+        justify-content: space-between;
+        height: 600px;
+        background-color: white;
+        border-radius: 10px;
+        width: 900px;
+    }
+    
+    .main-contents {
+        width: 54%;
+    }
+
+    .illustration-image {
+        width: 44%;
+        margin-bottom: 0px;
+    }
+
+    .header-title {
+        margin: 85px 0px 10px 0px;
+        font-size: 50px;
+    }
 }
