@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 - [Github repository](https://github.com/Emmanuel-Afrifa/newsletter-sign-up-page)
-- [Deployed site](https://clipboard-landing-page-sol.netlify.app/)
+- [Deployed site](https://newsletter-sign-up-sol.netlify.app/)
 
 ## Process
 ### Tools Used
