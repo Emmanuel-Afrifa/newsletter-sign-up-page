@@ -120,6 +120,7 @@ input:focus {
     margin-bottom: 25px;
     border-radius: 10px;
     cursor: pointer;
+    transition: background-color .4s;
 }
 
 .sign-up-button:hover {

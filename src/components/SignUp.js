@@ -51,7 +51,7 @@ const SignUp = ({page, setPage}) => {
                     state.emailError && <small className="error-message">Valid email required</small>
                 }
             </div>
-            <input type="text" value={state.inputValue} onChange={onChangeHandler} className={inputClassname}/>
+            <input type="text" aria-label="email-input" value={state.inputValue} onChange={onChangeHandler} className={inputClassname}/>
             <Button 
                     innerText='Subscribe to monthly newsletter'
                     onClickHandler={onClickHandler}
